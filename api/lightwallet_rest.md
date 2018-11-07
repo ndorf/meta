@@ -1,6 +1,12 @@
-# Hosted Wallet API
-Discussion for the current status of the hosted wallet (mymonero/openmonero)
-API.
+# Lightwallet API
+This document describes a reference standard specification for the Monero
+lightwallet server/client API. It’s implemented by OpenMonero, MyMonero, and
+the official Monero project, and is maintained with the purpose of organizing
+and recording the consensus of Monero lightwallet API projects, and to support
+alternate implementations.
+
+Modifications to this specification should only be made with consensus of the
+projects which participate by implementing the specification.
 
 ## Encoding Schemes
 ### JSON
