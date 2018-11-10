@@ -66,8 +66,8 @@ Information needed to spend an output.
 | rct              | binary            | Bytes of ringct data          |
 | tx_hash          | binary            | Bytes of tx hash              |
 | tx_prefix_hash   | binary            | Bytes of tx prefix hash       |
-| public_key       | binary            | Output public key             |
-| tx_pub_key       | binary            | Ephemeral ECDH key            |
+| public_key       | binary            | Bytes of output public key    |
+| tx_pub_key       | binary            | Bytes of the tx public key    |
 | spend_key_images | array of binary's | Bytes of key images           |
 | timestamp        | timestamp         | Timestamp of containing block |
 | height           | uint64            | Containing block height       |
