@@ -117,13 +117,13 @@ Information needed to spend an output.
 
 **spend** object
 
-|    Field   |      Type     |       Description        |
-|------------|---------------|--------------------------|
-| amount     | uint64-string | XMR possibly being spent |
-| key_image  | binary        | Bytes of the key image   |
-| tx_pub_key | binary        | Bytes of the tx public   |
-| out_index  | uint16        | Index of source output   |
-| mixin      | uint32        | Mixin of the spend       |
+|    Field   |      Type     |       Description          |
+|------------|---------------|----------------------------|
+| amount     | uint64-string | XMR possibly being spent   |
+| key_image  | binary        | Bytes of the key image     |
+| tx_pub_key | binary        | Bytes of the tx public key |
+| out_index  | uint16        | Index of source output     |
+| mixin      | uint32        | Mixin of the spend         |
 
 > `out_index` is a zero-based offset from the original received output. The
 > variable within the monero codebase is the `vout` array, this is the index
