@@ -227,7 +227,7 @@ list of candidate spends is returned.
 |----------------------|------------------|---------------------------|
 | locked_funds         | uint64-string    | Sum of unspendable XMR    |
 | total_received       | uint64-string    | Sum of received XMR       |
-| total_sent           | uint64           | Sum of possibly spent XMR |
+| total_sent           | uint64-string    | Sum of possibly spent XMR |
 | scanned_height       | uint64           | Current tx scan progress  |
 | scanned_block_height | uint64           | Current scan progress     |
 | start_height         | uint64           | Start height of response  |
