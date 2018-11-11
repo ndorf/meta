@@ -319,6 +319,7 @@ was actually spent.
 |    Field     |        Type       |                Description              |
 |--------------|-------------------|-----------------------------------------|
 | per_byte_fee | uint64-string     | Estimated network fee                   |
+| fee_mask     | uint64-string     | Fee quantization mask                   |
 | amount       | uint64-string     | The total value in outputs              |
 | outputs      | array of output's | Outputs possibly available for spending |
 
