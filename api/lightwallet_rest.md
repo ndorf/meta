@@ -316,11 +316,11 @@ was actually spent.
 
 **Response** object
 
-|    Field   |        Type       |                Description              |
-|------------|-------------------|-----------------------------------------|
-| per_kb_fee | uint64            | Estimated network fee                   |
-| amount     | uint64-string     | The total value in outputs              |
-| outputs    | array of output's | Outputs possibly available for spending |
+|    Field     |        Type       |                Description              |
+|--------------|-------------------|-----------------------------------------|
+| per_byte_fee | uint64-string     | Estimated network fee                   |
+| amount       | uint64-string     | The total value in outputs              |
+| outputs      | array of output's | Outputs possibly available for spending |
 
 #### `import_request`
 Request an account scan from the genesis block.
