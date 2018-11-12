@@ -57,21 +57,20 @@ A standard Monero public address encoded as a string in JSON.
 
 Information needed to spend an output.
 
-|       Field      |        Type       |          Description            |
-|------------------|-------------------|---------------------------------|
-| tx_id            | uint64            | Index of tx in blockchain       |
-| amount           | uint64-string     | XMR value of output             |
-| index            | uint16            | Index within vout vector        |
-| global_index     | uint64-string     | Index within amount             |
-| is_rct           | boolean           | True if this is a ringct output |
-| rct              | binary            | Bytes of ringct data            |
-| tx_hash          | binary            | Bytes of tx hash                |
-| tx_prefix_hash   | binary            | Bytes of tx prefix hash         |
-| public_key       | binary            | Bytes of output public key      |
-| tx_pub_key       | binary            | Bytes of the tx public key      |
-| spend_key_images | array of binary's | Bytes of key images             |
-| timestamp        | timestamp         | Timestamp of containing block   |
-| height           | uint64            | Containing block height         |
+|       Field      |        Type       |          Description          |
+|------------------|-------------------|-------------------------------|
+| tx_id            | uint64            | Index of tx in blockchain     |
+| amount           | uint64-string     | XMR value of output           |
+| index            | uint16            | Index within vout vector      |
+| global_index     | uint64-string     | Index within amount           |
+| rct              | binary            | Bytes of ringct data          |
+| tx_hash          | binary            | Bytes of tx hash              |
+| tx_prefix_hash   | binary            | Bytes of tx prefix hash       |
+| public_key       | binary            | Bytes of output public key    |
+| tx_pub_key       | binary            | Bytes of the tx public key    |
+| spend_key_images | array of binary's | Bytes of key images           |
+| timestamp        | timestamp         | Timestamp of containing block |
+| height           | uint64            | Containing block height       |
 
 > `tx_id` is determined by the monero daemon. It is the offset that a
 > transaction appears in the blockchain from the genesis block.
@@ -85,7 +84,8 @@ Information needed to spend an output.
 
 > `rct` is the concatenation of the public commitment, then the decrypted
 > ringct mask value, and finally the decrypted ringct amount value. The value
-> is returned as a single 96-byte binary blob.
+> is returned as a single 96-byte binary blob. Coinbase ringct transactions
+> shall have the identity mask and a zero amount in this field.
 
 **rates** object
 
