@@ -82,12 +82,13 @@ Information needed to spend an output.
 > `tx_hash` and `tx_prefix_hash` are determined by how `monerod` computes the
 > hash.
 
-> `rct` is, for ringct outputs, a 96-byte blob containing the concatenation of
-> the public commitment, then the ringct mask value, and finally the ringct
-> amount value. For ringct coinbase outputs, the mask is always the identity
-> mask and the amount is zero; for other ringct outputs, the mask and amount
-> are the respective raw encrypted values, which must be decrypted by the
-> client using the view secret key. For non-ringct outputs, this field is nil.
+> `rct` is, for ringct outputs, a 96-byte blob containing the concatenation
+> of the public commitment, then the ringct mask value, and finally the
+> ringct amount value. For ringct coinbase outputs, the mask is always the
+> identity mask and the amount is zero; for non-coinbase ringct outputs, the
+> mask and amount are the respective raw encrypted values, which must be
+> decrypted by the client using the view secret key. For non-ringct outputs,
+> this field is nil.
 
 **rates** object
 
