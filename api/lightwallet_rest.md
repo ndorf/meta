@@ -288,7 +288,7 @@ locally select outputs using a triangular distribution
 > If clients are creating multiple rings with the same amount, they must set
 > `count` to the mixin level and add the value to `amounts` multiple times.
 > Server must respond to each value in `amounts`, even if the value appears
-> multiple times.gi
+> multiple times.
 
 **Response** object
 
