@@ -221,7 +221,7 @@ list of candidate spends is returned.
 | address   | base58-address | Address to retrieve                   |
 | view_key  | binary         | View key bytes for authorization      |
 
-> If `address` is not authorized, the server must return a HTTP 405
+> If `address` is not authorized, the server must return a HTTP 403
 > "Forbidden" error.
 
 **Response** object
@@ -253,7 +253,7 @@ spends is returned.
 | address  | base58-address | Address to retrieve                   |
 | view_key | binary         | View key bytes for authorization      |
 
-> If `address` is not authorized, the server must return a HTTP 405
+> If `address` is not authorized, the server must return a HTTP 403
 > "Forbidden" error.
 
 **Response** object
@@ -369,7 +369,7 @@ Check for the existence of an account or create a new one.
 > error must be returned.
 
 > If approval process is manual, a successful HTTP 200 OK and response object
-> must be returned. Subsequent requests shall be HTTP 405 "Forbidden" until
+> must be returned. Subsequent requests shall be HTTP 403 "Forbidden" until
 > account is approved.
 
 **Response** object
